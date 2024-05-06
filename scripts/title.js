@@ -5,4 +5,4 @@ let filename = window.location.pathname.split('/').pop().split('.')[0];
 let websiteTitle = " - Odin Recipes"; 
 
 // Combine and set the title
-document.title = filename + websiteTitle;
+document.title = filename[0].toUpperCase() + filename.slice(1) + websiteTitle;
